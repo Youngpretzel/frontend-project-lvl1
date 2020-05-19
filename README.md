@@ -1,1 +1,1 @@
-[![codecov](https://codecov.io/gh/Youngpretzel/frontend-project-lvl1/branch/master/graph/badge.svg)](https://codecov.io/gh/Youngpretzel/frontend-project-lvl1)
+
