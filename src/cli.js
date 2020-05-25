@@ -4,6 +4,7 @@ const userName = readlineSync.question('Welcome to the Brain Games!\nMay I have 
 const condEOrNotEven = 'Answer "yes" if the number is even, otherwise answer "no".';
 const condCalc = 'What is the result of the expression?';
 const condGcd = 'Find the greatest common divisor of given numbers.';
+const condProgression = 'What number is missing in the progression?';
 
 export const greetUser = () => {
   console.log(`Hello, ${userName}!`);
@@ -92,6 +93,35 @@ export const parityCheck = () => {
       }
     } else if (evenOrNotEven(randomNumber) !== userAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${evenOrNotEven(randomNumber)}".\nLet's try again, ${userName}!`);
+      break;
+    }
+  }
+};
+
+export const gameProgression = () => {
+  console.log(condProgression);
+  const countRound = 3;
+  for (let i = 0; i < countRound;) {
+    const firstNum = Math.floor(Math.random() * 50);
+    const interval = Math.ceil(Math.random() * 10);
+    const arithmeticProgression = [firstNum];
+    for (let x = 0; x < 9; x += 1) {
+      const nextNum = arithmeticProgression[x] + interval;
+      arithmeticProgression.push(nextNum);
+    }
+    const hiddenNumIndex = Math.floor(Math.random() * 9);
+    const realAnswer = arithmeticProgression[hiddenNumIndex];
+    arithmeticProgression[hiddenNumIndex] = '..';
+    const hidden = arithmeticProgression.join(' ');
+    const userAnswer = readlineSync.question(`Question: ${hidden} \nYour answer: `);
+    if (realAnswer === Number.parseInt(userAnswer, 10)) {
+      console.log('Correct!');
+      i += 1;
+      if (i === 3) {
+        console.log(`Congratulations, ${userName}!`);
+      }
+    } else if (realAnswer !== Number.parseInt(userAnswer, 10)) {
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${realAnswer}".\nLet's try again, ${userName}!`);
       break;
     }
   }
