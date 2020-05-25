@@ -5,6 +5,7 @@ const condEOrNotEven = 'Answer "yes" if the number is even, otherwise answer "no
 const condCalc = 'What is the result of the expression?';
 const condGcd = 'Find the greatest common divisor of given numbers.';
 const condProgression = 'What number is missing in the progression?';
+const condPrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export const greetUser = () => {
   console.log(`Hello, ${userName}!`);
@@ -122,6 +123,33 @@ export const gameProgression = () => {
       }
     } else if (realAnswer !== Number.parseInt(userAnswer, 10)) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${realAnswer}".\nLet's try again, ${userName}!`);
+      break;
+    }
+  }
+};
+
+export const brainPrime = () => {
+  console.log(condPrime);
+  const primeNum = (num) => {
+    for (let i = 2; i < num; i += 1) {
+      if (num % i === 0) {
+        return 'no';
+      }
+    }
+    return 'yes';
+  };
+  const countRound = 3;
+  for (let i = 0; i < countRound;) {
+    const randomNumber = Math.floor(Math.random() * 23);
+    const userAnswer = readlineSync.question(`Question: ${randomNumber} \nYour answer: `);
+    if (primeNum(randomNumber) === userAnswer) {
+      console.log('Correct!');
+      i += 1;
+      if (i === 3) {
+        console.log(`Congratulations, ${userName}!`);
+      }
+    } else if (primeNum(randomNumber) !== userAnswer) {
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${primeNum(randomNumber)}".\nLet's try again, ${userName}!`);
       break;
     }
   }
