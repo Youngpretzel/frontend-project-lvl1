@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { greetUser, brainPrime } from '../src/cli.js';
+import playGamePrime from '../src/games/brain-prime.js';
+import { greetUser } from '../src/cli.js';
 
 greetUser();
-brainPrime();
+playGamePrime();

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { greetUser, parityCheck } from '../src/cli.js';
+import playGameEven from '../src/games/brain-even.js';
+import { greetUser } from '../src/cli.js';
 
 greetUser();
-parityCheck();
+playGameEven();

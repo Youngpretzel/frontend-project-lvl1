@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { greetUser, gameCalc } from '../src/cli.js';
+import playGameCalc from '../src/games/brain-calc.js';
+import { greetUser } from '../src/cli.js';
 
 greetUser();
-gameCalc();
+playGameCalc();

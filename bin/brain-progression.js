@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { greetUser, gameProgression } from '../src/cli.js';
+import playGameProgression from '../src/games/brain-progression.js';
+import { greetUser } from '../src/cli.js';
 
 greetUser();
-gameProgression();
+playGameProgression();
