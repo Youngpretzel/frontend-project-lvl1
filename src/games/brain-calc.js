@@ -6,31 +6,31 @@ const playGameCalc = () => {
   const countRound = 3;
   for (let i = 0; i < countRound;) {
     const operators = ['+', '-', '*'];
-    const randomOperators = operators[Math.floor(Math.random() * operators.length)];
-    const randomNumber1 = Math.floor(Math.random() * 10);
-    const randomNumber2 = Math.floor(Math.random() * 10);
-    const calculation = () => {
-      let calc = 0;
-      if (randomOperators === '+') {
-        calc = randomNumber1 + randomNumber2;
+    const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+    const randomNum1 = Math.floor(Math.random() * 10);
+    const randomNum2 = Math.floor(Math.random() * 10);
+    const calculate = () => {
+      let resultCalc = 0;
+      if (randomOperator === '+') {
+        resultCalc = randomNum1 + randomNum2;
       }
-      if (randomOperators === '-') {
-        calc = randomNumber1 - randomNumber2;
+      if (randomOperator === '-') {
+        resultCalc = randomNum1 - randomNum2;
       }
-      if (randomOperators === '*') {
-        calc = randomNumber1 * randomNumber2;
+      if (randomOperator === '*') {
+        resultCalc = randomNum1 * randomNum2;
       }
-      return calc;
+      return resultCalc;
     };
-    const userAnswer = readlineSync.question(`Question: ${randomNumber1} ${randomOperators} ${randomNumber2} \nYour answer: `);
-    if (calculation() === Number(userAnswer)) {
+    const userAnswer = readlineSync.question(`Question: ${randomNum1} ${randomOperator} ${randomNum2} \nYour answer: `);
+    if (calculate() === Number(userAnswer)) {
       console.log('Correct!');
       i += 1;
       if (i === 3) {
         console.log(`Congratulations, ${userName}!`);
       }
-    } else if (calculation() !== Number(userAnswer)) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${calculation()}".\nLet's try again, ${userName}!`);
+    } else if (calculate() !== Number(userAnswer)) {
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${calculate()}".\nLet's try again, ${userName}!`);
       break;
     }
   }

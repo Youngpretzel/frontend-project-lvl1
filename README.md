@@ -1,11 +1,21 @@
 [![Node CI](https://github.com/hexlet-boilerplates/nodejs-package/workflows/Node%20CI/badge.svg)](https://github.com/Youngpretzel/frontend-project-lvl1/actions)
 
-[![asciicast](https://asciinema.org/a/ENYrMRZED6XKEz7tIhvo18fgj.svg)](https://asciinema.org/a/ENYrMRZED6XKEz7tIhvo18fgj)
+## Brain-prime
 
-[![asciicast](https://asciinema.org/a/YKaAcpp6RPfw9EHJ8mG2CPCmP.svg)](https://asciinema.org/a/YKaAcpp6RPfw9EHJ8mG2CPCmP)
+[![asciicast](https://asciinema.org/a/CoCIaVRwnnBeKyCs1ip6QY9YW.svg)](https://asciinema.org/a/CoCIaVRwnnBeKyCs1ip6QY9YW)
 
-[![asciicast](https://asciinema.org/a/AammKRKu6WBVI4xxGgBAiUEPt.svg)](https://asciinema.org/a/AammKRKu6WBVI4xxGgBAiUEPt)
+## Brain-calc
 
-[![asciicast](https://asciinema.org/a/NIBsCuBMlfhynjBxUTSgklnK0.svg)](https://asciinema.org/a/NIBsCuBMlfhynjBxUTSgklnK0)
+[![asciicast](https://asciinema.org/a/0hJtLy0HqDnixYzw5Uq4LR3m5.svg)](https://asciinema.org/a/0hJtLy0HqDnixYzw5Uq4LR3m5)
 
-[![asciicast](https://asciinema.org/a/SzOKA9GJWW68R6xhGIXIv0gmG.svg)](https://asciinema.org/a/SzOKA9GJWW68R6xhGIXIv0gmG)
+## Brain-even
+
+[![asciicast](https://asciinema.org/a/PDeyOEVSfUMsiZ8sayPMOUqDv.svg)](https://asciinema.org/a/PDeyOEVSfUMsiZ8sayPMOUqDv)
+
+## Brain-progression
+
+[![asciicast](https://asciinema.org/a/oz9zHDsbuG9mkG9n6ovJBGNA5.svg)](https://asciinema.org/a/oz9zHDsbuG9mkG9n6ovJBGNA5)
+
+## Brain-gcd
+
+[![asciicast](https://asciinema.org/a/VtUe6exAlcqXcnlMxTjCLc6si.svg)](https://asciinema.org/a/VtUe6exAlcqXcnlMxTjCLc6si)
