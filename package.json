@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/Youngpretzel/frontend-project-lvl1#readme",
   "dependencies": {
+    "@hexlet/pairs": "^1.0.15",
     "eslint": "^7.1.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
