@@ -7,7 +7,7 @@ export const condition = 'What number is missing in the progression?';
 const getProgressionNum = () => {
   const countNumProgression = 9;
   const firstNum = randomNum(1, 50);
-  const interval = randomNum(2, 5);
+  const interval = randomNum(1, 10);
   const arithmeticProgression = [firstNum];
   for (let x = 0; x < countNumProgression; x += 1) {
     const nextNum = arithmeticProgression[x] + interval;
