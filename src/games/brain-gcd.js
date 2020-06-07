@@ -1,4 +1,4 @@
-import randomNum from '../utilits.js';
+import { randomNum } from '../utilits.js';
 import playBrainGame from '../cli.js';
 
 export const condition = 'Find the greatest common divisor of given numbers.';
@@ -14,9 +14,9 @@ const gcd = (num1, num2) => {
 const getQuestionAnswer = () => {
   const randomNumber1 = randomNum(1, 20);
   const randomNumber2 = randomNum(1, 20);
-  const result = gcd(randomNumber1, randomNumber2);
+  const rightAnswer = String(gcd(randomNumber1, randomNumber2));
   const question = `${randomNumber1} ${randomNumber2}`;
-  return [question, String(result)];
+  return [question, rightAnswer];
 };
 
-export const brainGcd = () => playBrainGame(getQuestionAnswer, condition);
+export const playBrainGcd = () => playBrainGame(getQuestionAnswer, condition);

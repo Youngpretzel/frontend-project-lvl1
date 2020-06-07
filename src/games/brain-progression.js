@@ -1,4 +1,4 @@
-import randomNum from '../utilits.js';
+import { randomNum } from '../utilits.js';
 import playBrainGame from '../cli.js';
 
 
@@ -21,9 +21,9 @@ const getProgressionNum = () => {
 
 const getQuestionAnswer = () => {
   const progression = getProgressionNum();
-  const answer = progression[1];
+  const rightAnswer = String(progression[1]);
   const question = `${progression[0]}`;
-  return [question, String(answer)];
+  return [question, rightAnswer];
 };
 
-export const brainProgression = () => playBrainGame(getQuestionAnswer, condition);
+export const playBrainProgression = () => playBrainGame(getQuestionAnswer, condition);
