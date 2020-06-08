@@ -14,6 +14,9 @@ const generateCalc = (firstNum, secondNum, operator) => {
   if (operator === '*') {
     resultCalc = firstNum * secondNum;
   }
+  if (operator === '/') {
+    resultCalc = firstNum / secondNum;
+  }
   return resultCalc;
 };
 
