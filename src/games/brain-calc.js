@@ -1,28 +1,28 @@
 import playBrainGame from '../cli.js';
-import { getOperators, randomNum } from '../utilits.js';
+import { getOperator, generateRandomNum } from '../utilits.js';
 
 export const condition = 'What is the result of the expression?';
 
-const getResultCalc = (a, b, oper) => {
+const generateCalc = (firstNum, secondNum, operator) => {
   let resultCalc = 0;
-  if (oper === '+') {
-    resultCalc = a + b;
+  if (operator === '+') {
+    resultCalc = firstNum + secondNum;
   }
-  if (oper === '-') {
-    resultCalc = a - b;
+  if (operator === '-') {
+    resultCalc = firstNum - secondNum;
   }
-  if (oper === '*') {
-    resultCalc = a * b;
+  if (operator === '*') {
+    resultCalc = firstNum * secondNum;
   }
   return resultCalc;
 };
 
 const getQuestionAnswer = () => {
-  const oper = getOperators();
-  const a = randomNum(1, 10);
-  const b = randomNum(1, 10);
-  const rightAnswer = String(getResultCalc(a, b, oper));
-  const question = `${a} ${oper} ${b}`;
+  const operator = getOperator();
+  const firstNum = generateRandomNum(1, 10);
+  const secondNum = generateRandomNum(1, 10);
+  const rightAnswer = String(generateCalc(firstNum, secondNum, operator));
+  const question = `${firstNum} ${operator} ${secondNum}`;
   return [question, rightAnswer];
 };
 
