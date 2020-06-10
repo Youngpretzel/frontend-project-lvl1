@@ -10,24 +10,18 @@ const getOperator = () => {
 };
 
 const getСalculation = (firstNum, secondNum, operator) => {
-  let result = 0;
   switch (operator) {
     case '+':
-      result += firstNum + secondNum;
-      break;
+      return firstNum + secondNum;
     case '-':
-      result += firstNum - secondNum;
-      break;
+      return firstNum - secondNum;
     case '*':
-      result += firstNum * secondNum;
-      break;
+      return firstNum * secondNum;
     case '/':
-      result += firstNum / secondNum;
-      break;
+      return firstNum / secondNum;
     default:
       Error(`Unknown operator: ${operator}!`);
   }
-  return result;
 };
 
 const getQuestionAnswer = () => {
