@@ -1,16 +1,16 @@
-import { generateRandomNum } from '../utilits.js';
-import playBrainGame from '../cli.js';
+import generateRandomNum from '../utilits.js';
+import playBrainGame from '../index.js';
 
 
-export const condition = 'What number is missing in the progression?';
+const condition = 'What number is missing in the progression?';
 
-const getProgressionNum = () => {
+const getSequenceOfNumbers = () => {
   const countNumProgression = 9;
   const firstNum = generateRandomNum(1, 50);
   const interval = generateRandomNum(1, 10);
   const arithmeticProgression = [firstNum];
-  for (let x = 0; x < countNumProgression; x += 1) {
-    const nextNum = arithmeticProgression[x] + interval;
+  for (let i = 0; i < countNumProgression; i += 1) {
+    const nextNum = arithmeticProgression[i] + interval;
     arithmeticProgression.push(nextNum);
   }
   const hiddenNumIndex = generateRandomNum(0, 9);
@@ -20,10 +20,12 @@ const getProgressionNum = () => {
 };
 
 const getQuestionAnswer = () => {
-  const progression = getProgressionNum();
-  const rightAnswer = String(progression[1]);
+  const progression = getSequenceOfNumbers();
+  const answer = String(progression[1]);
   const question = `${progression[0]}`;
-  return [question, rightAnswer];
+  return [question, answer];
 };
 
-export const playBrainProgression = () => playBrainGame(getQuestionAnswer, condition);
+const playBrainProgression = () => playBrainGame(getQuestionAnswer, condition);
+
+export default playBrainProgression;

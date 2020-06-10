@@ -1,8 +1,8 @@
-import { generateRandomNum } from '../utilits.js';
-import playBrainGame from '../cli.js';
+import generateRandomNum from '../utilits.js';
+import playBrainGame from '../index.js';
 
-export const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const hasPrimeNum = (num) => {
+const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const isPrimeNum = (num) => {
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
       return 'no';
@@ -13,9 +13,11 @@ const hasPrimeNum = (num) => {
 
 const getQuestionAnswer = () => {
   const randomNumber = generateRandomNum(1, 23);
-  const rightAnswer = String(hasPrimeNum(randomNumber));
+  const answer = String(isPrimeNum(randomNumber));
   const question = `${randomNumber}`;
-  return [question, rightAnswer];
+  return [question, answer];
 };
 
-export const playBrainPrime = () => playBrainGame(getQuestionAnswer, condition);
+const playBrainPrime = () => playBrainGame(getQuestionAnswer, condition);
+
+export default playBrainPrime;

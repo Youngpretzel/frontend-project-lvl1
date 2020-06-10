@@ -1,32 +1,43 @@
-import playBrainGame from '../cli.js';
-import { getOperator, generateRandomNum } from '../utilits.js';
+import playBrainGame from '../index.js';
+import generateRandomNum from '../utilits.js';
 
-export const condition = 'What is the result of the expression?';
+const condition = 'What is the result of the expression?';
 
-const generateCalc = (firstNum, secondNum, operator) => {
-  let resultCalc = 0;
-  if (operator === '+') {
-    resultCalc = firstNum + secondNum;
+const getOperator = () => {
+  const operators = ['+', '-', '*'];
+  const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+  return randomOperator;
+};
+
+const getСalculation = (firstNum, secondNum, operator) => {
+  let result = 0;
+  switch (operator) {
+    case '+':
+      result += firstNum + secondNum;
+      break;
+    case '-':
+      result += firstNum - secondNum;
+      break;
+    case '*':
+      result += firstNum * secondNum;
+      break;
+    case '/':
+      result += firstNum / secondNum;
+      break;
+    default:
   }
-  if (operator === '-') {
-    resultCalc = firstNum - secondNum;
-  }
-  if (operator === '*') {
-    resultCalc = firstNum * secondNum;
-  }
-  if (operator === '/') {
-    resultCalc = firstNum / secondNum;
-  }
-  return resultCalc;
+  return result;
 };
 
 const getQuestionAnswer = () => {
   const operator = getOperator();
   const firstNum = generateRandomNum(1, 10);
   const secondNum = generateRandomNum(1, 10);
-  const rightAnswer = String(generateCalc(firstNum, secondNum, operator));
+  const answer = String(getСalculation(firstNum, secondNum, operator));
   const question = `${firstNum} ${operator} ${secondNum}`;
-  return [question, rightAnswer];
+  return [question, answer];
 };
 
-export const playBrainCalc = () => playBrainGame(getQuestionAnswer, condition);
+const playBrainCalc = () => playBrainGame(getQuestionAnswer, condition);
+
+export default playBrainCalc;

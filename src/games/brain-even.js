@@ -1,14 +1,16 @@
-import { generateRandomNum } from '../utilits.js';
-import playBrainGame from '../cli.js';
+import generateRandomNum from '../utilits.js';
+import playBrainGame from '../index.js';
 
-export const condition = 'Answer "yes" if the number is even, otherwise answer "no".';
+const condition = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const hasParityСheck = (num) => num % 2 === 0;
+const isParityСheck = (num) => num % 2 === 0;
 
 const getQuestionAnswer = () => {
   const question = generateRandomNum(0, 100);
-  const rightAnswer = hasParityСheck(question) ? 'yes' : 'no';
-  return [question, rightAnswer];
+  const answer = isParityСheck(question) ? 'yes' : 'no';
+  return [question, answer];
 };
 
-export const playBrainEven = () => playBrainGame(getQuestionAnswer, condition);
+const playBrainEven = () => playBrainGame(getQuestionAnswer, condition);
+
+export default playBrainEven;

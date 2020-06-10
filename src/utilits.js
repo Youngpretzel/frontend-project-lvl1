@@ -1,10 +1,7 @@
-export const generateRandomNum = (min, max) => {
-  const rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
+
+const generateRandomNum = (min, max) => {
+  const randomNum = min + Math.random() * (max + 1 - min);
+  return Math.floor(randomNum);
 };
 
-export const getOperator = () => {
-  const operators = ['+', '-', '*'];
-  const randomOperator = operators[Math.floor(Math.random() * operators.length)];
-  return `${randomOperator}`;
-};
+export default generateRandomNum;
