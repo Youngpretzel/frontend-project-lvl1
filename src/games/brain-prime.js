@@ -1,4 +1,4 @@
-import generateRandomNum from '../utilits.js';
+import { generateRandomNum } from '../utilits.js';
 import playBrainGame from '../index.js';
 
 const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';

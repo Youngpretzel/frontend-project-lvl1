@@ -1,5 +1,5 @@
 import playBrainGame from '../index.js';
-import generateRandomNum from '../utilits.js';
+import { generateRandomNum } from '../utilits.js';
 
 const condition = 'What is the result of the expression?';
 
@@ -25,6 +25,7 @@ const getСalculation = (firstNum, secondNum, operator) => {
       result += firstNum / secondNum;
       break;
     default:
+      Error('Unknown operator!');
   }
   return result;
 };

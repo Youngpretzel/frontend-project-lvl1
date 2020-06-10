@@ -1,4 +1,4 @@
-import generateRandomNum from '../utilits.js';
+import { generateRandomNum } from '../utilits.js';
 import playBrainGame from '../index.js';
 
 const condition = 'Find the greatest common divisor of given numbers.';

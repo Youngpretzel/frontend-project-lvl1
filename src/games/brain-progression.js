@@ -1,4 +1,4 @@
-import generateRandomNum from '../utilits.js';
+import { generateRandomNum } from '../utilits.js';
 import playBrainGame from '../index.js';
 
 
@@ -13,16 +13,16 @@ const getSequenceOfNumbers = () => {
     const nextNum = arithmeticProgression[i] + interval;
     arithmeticProgression.push(nextNum);
   }
-  const hiddenNumIndex = generateRandomNum(0, 9);
-  const correctAnswer = arithmeticProgression[hiddenNumIndex];
-  arithmeticProgression[hiddenNumIndex] = '..';
-  return [arithmeticProgression, correctAnswer];
+  return arithmeticProgression;
 };
 
 const getQuestionAnswer = () => {
   const progression = getSequenceOfNumbers();
-  const answer = String(progression[1]);
-  const question = `${progression[0]}`;
+  const hiddenNumIndex = generateRandomNum(0, 9);
+  const correctAnswer = progression[hiddenNumIndex];
+  progression[hiddenNumIndex] = '..';
+  const answer = String(correctAnswer);
+  const question = `${progression}`;
   return [question, answer];
 };
 
