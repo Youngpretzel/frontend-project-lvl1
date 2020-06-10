@@ -25,7 +25,7 @@ const getСalculation = (firstNum, secondNum, operator) => {
       result += firstNum / secondNum;
       break;
     default:
-      Error('Unknown operator!');
+      Error(`Unknown operator: ${operator}!`);
   }
   return result;
 };

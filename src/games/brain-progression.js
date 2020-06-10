@@ -3,9 +3,9 @@ import playBrainGame from '../index.js';
 
 
 const condition = 'What number is missing in the progression?';
+const countNumProgression = 9;
 
 const getProgression = () => {
-  const countNumProgression = 9;
   const firstNum = generateRandomNum(1, 50);
   const interval = generateRandomNum(1, 10);
   const arithmeticProgression = [firstNum];
