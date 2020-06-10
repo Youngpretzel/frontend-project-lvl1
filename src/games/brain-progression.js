@@ -4,7 +4,7 @@ import playBrainGame from '../index.js';
 
 const condition = 'What number is missing in the progression?';
 
-const getSequenceOfNumbers = () => {
+const getProgression = () => {
   const countNumProgression = 9;
   const firstNum = generateRandomNum(1, 50);
   const interval = generateRandomNum(1, 10);
@@ -17,7 +17,7 @@ const getSequenceOfNumbers = () => {
 };
 
 const getQuestionAnswer = () => {
-  const progression = getSequenceOfNumbers();
+  const progression = getProgression();
   const hiddenNumIndex = generateRandomNum(0, 9);
   const correctAnswer = progression[hiddenNumIndex];
   progression[hiddenNumIndex] = '..';
