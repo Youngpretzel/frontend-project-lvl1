@@ -1,7 +1,6 @@
 import { generateRandomNum } from '../utilits.js';
 import playBrainGame from '../index.js';
 
-
 const condition = 'What number is missing in the progression?';
 const countNumProgression = 10;
 
