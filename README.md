@@ -6,7 +6,7 @@ https://codeclimate.com/github/Youngpretzel/frontend-project-lvl1
 
 ## Brain-prime
 
-[![asciicast](https://asciinema.org/a/9kW4HxhFC0QhF0pRHJ8zDmmIi.svg)](https://asciinema.org/a/9kW4HxhFC0QhF0pRHJ8zDmmIi)
+[![asciicast](https://asciinema.org/a/9INVQMVpy2h1xnYxC5VGN7L8N.svg)](https://asciinema.org/a/9INVQMVpy2h1xnYxC5VGN7L8N)
 
 ## Brain-calc
 
