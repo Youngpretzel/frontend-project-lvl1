@@ -20,7 +20,7 @@ const getСalculation = (firstNum, secondNum, operator) => {
     case '/':
       return firstNum / secondNum;
     default:
-      Error(`Unknown operator: ${operator}!`);
+      throw new Error('Unknown operator!');
   }
 };
 
