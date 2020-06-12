@@ -9,8 +9,8 @@ const getProgression = () => {
   const interval = generateRandomNum(1, 10);
   const arithmeticProgression = [firstNum];
   for (let i = 1; i < progressionLength; i += 1) {
-    const previousNumber = arithmeticProgression[i - 1];
-    const nextNum = previousNumber + interval;
+    const previousNum = arithmeticProgression[i - 1];
+    const nextNum = previousNum + interval;
     arithmeticProgression.push(nextNum);
   }
   return arithmeticProgression;

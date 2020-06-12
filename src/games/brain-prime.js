@@ -12,9 +12,9 @@ const isPrimeNum = (num) => {
 };
 
 const getQuestionAnswer = () => {
-  const randomNumber = generateRandomNum(1, 23);
-  const answer = String(isPrimeNum(randomNumber));
-  const question = `${randomNumber}`;
+  const randomNum = generateRandomNum(1, 23);
+  const answer = String(isPrimeNum(randomNum));
+  const question = `${randomNum}`;
   return [question, answer];
 };
 
