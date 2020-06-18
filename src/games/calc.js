@@ -5,7 +5,7 @@ const condition = 'What is the result of the expression?';
 
 const getOperator = () => {
   const operators = ['+', '-', '*'];
-  const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+  const randomOperator = operators[generateRandomNum(0, operators.length - 1)];
   return randomOperator;
 };
 
@@ -17,8 +17,6 @@ const getСalculation = (firstNum, secondNum, operator) => {
       return firstNum - secondNum;
     case '*':
       return firstNum * secondNum;
-    case '/':
-      return firstNum / secondNum;
     default:
       throw new Error('Unknown operator!');
   }

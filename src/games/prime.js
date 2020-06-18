@@ -5,16 +5,16 @@ const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".
 const isPrimeNum = (num) => {
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
 
 const getQuestionAnswer = () => {
-  const randomNum = generateRandomNum(1, 23);
-  const answer = String(isPrimeNum(randomNum));
-  const question = `${randomNum}`;
+  const randomNum = generateRandomNum(2, 100);
+  const answer = (isPrimeNum(randomNum)) ? 'yes' : 'no';
+  const question = randomNum;
   return [question, answer];
 };
 

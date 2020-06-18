@@ -11,7 +11,7 @@ const playBrainGame = (getQuestionAnswer, condition) => {
     const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `);
     console.log('Correct!');
     if (answer !== userAnswer) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".\nLet's try again, John!`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".\nLet's try again, ${userName}!`);
       return;
     }
   }
