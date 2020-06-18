@@ -18,7 +18,7 @@ const getQuestionAnswer = () => {
   const firstNum = generateRandomNum(0, 50);
   const interval = generateRandomNum(1, 10);
   const progression = getProgression(firstNum, interval);
-  const hiddenNumIndex = generateRandomNum(1, progression.length);
+  const hiddenNumIndex = generateRandomNum(0, progression.length - 1);
   const correctAnswer = progression[hiddenNumIndex];
   progression[hiddenNumIndex] = '..';
   const answer = String(correctAnswer);

@@ -11,16 +11,16 @@ brain-games:
 		node bin/brain-games.js	
 
 even:
-		node bin/even.js
+		node bin/brain-even.js
 
 calc:
-		node bin/calc.js
+		node bin/brain-calc.js
 
 gcd:
-		node bin/gcd.js
+		node bin/brain-gcd.js
 
 progression:
-		node bin/progression.js
+		node bin/brain-progression.js
 		
 prime:
-		node bin/prime.js
+		node bin/brain-prime.js

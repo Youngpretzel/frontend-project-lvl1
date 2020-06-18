@@ -4,22 +4,38 @@
 
 https://codeclimate.com/github/Youngpretzel/frontend-project-lvl1
 
-## Brain-prime
+## description
 
-[![asciicast](https://asciinema.org/a/9INVQMVpy2h1xnYxC5VGN7L8N.svg)](https://asciinema.org/a/9INVQMVpy2h1xnYxC5VGN7L8N)
+ - "Brain-games" - a set of five console games based on the principle of popular mobile applications for brain pumping. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and offer to play it again. Games:
+
+
+## Brain-even 
+
+- Defining an even number.
+
+[![asciicast](https://asciinema.org/a/B3WlGNlTGMTnvpwuz6pyKWUKt.svg)](https://asciinema.org/a/B3WlGNlTGMTnvpwuz6pyKWUKt)
 
 ## Brain-calc
 
-[![asciicast](https://asciinema.org/a/oHIKvl5uzbumyepk8yKnJFlPS.svg)](https://asciinema.org/a/oHIKvl5uzbumyepk8yKnJFlPS)
+- Arithmetic expressions to be calculated.
 
-## Brain-even
+[![asciicast](https://asciinema.org/a/q6qldU7M1d1aviOHp4YJohjCL.svg)](https://asciinema.org/a/q6qldU7M1d1aviOHp4YJohjCL)
 
-[![asciicast](https://asciinema.org/a/QB77Bx0ecNTShsX1VB7TyxxHl.svg)](https://asciinema.org/a/QB77Bx0ecNTShsX1VB7TyxxHl)
+## Brain-prime
+
+ - The definition of a Prime number.
+
+[![asciicast](https://asciinema.org/a/tZVd0FuGxvtEL1LkNJiKrscNN.svg)](https://asciinema.org/a/tZVd0FuGxvtEL1LkNJiKrscNN)
 
 ## Brain-progression
 
-[![asciicast](https://asciinema.org/a/8ivM3QAhl3SXIFKn0wrqLO8Qq.svg)](https://asciinema.org/a/8ivM3QAhl3SXIFKn0wrqLO8Qq)
+ - Progression. Search for missing numbers in a sequence of numbers.
+
+
+[![asciicast](https://asciinema.org/a/ZfPHLo521PGM5FWNHvToZuYBK.svg)](https://asciinema.org/a/ZfPHLo521PGM5FWNHvToZuYBK)
 
 ## Brain-gcd
 
-[![asciicast](https://asciinema.org/a/ojQwH0opHlnvygcSsYRfzMN8G.svg)](https://asciinema.org/a/ojQwH0opHlnvygcSsYRfzMN8G)
+ - Determining the largest common divisor.
+
+[![asciicast](https://asciinema.org/a/h5pPhXUUiaoK9u435F7oPOVmt.svg)](https://asciinema.org/a/h5pPhXUUiaoK9u435F7oPOVmt)
